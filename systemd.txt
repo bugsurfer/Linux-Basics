@@ -1,0 +1,43 @@
+systemd is a Linux initialization system and service manager
+that includes features like on-demand starting of daemons, mount and automount point maintenance, snapshot support, and processes tracking
+using Linux control groups. systemd provides a logging daemon and other tools and utilities to help with common system administration tasks.
+
+
+This powerful suite of software can manage many aspects of your server, from services to mounted devices and system states.
+
+ In systemd, a unit refers to any resource that the system knows how to operate on and manage. This is the primary object that the systemd tools know how to deal with. These resources are defined using configuration files called unit files.
+
+ Units in some ways can be said to similar to services or jobs in other init systems. However, a unit has a much broader definition, as these can be used to abstract services, network resources, devices, filesystem mounts, and isolated resource pools.
+
+/etc/systemd/system
+
+/etc/init.d
+
+
+/sbin - Binaries needed for booting, low-level system repair, or maintenance (run level 1 or S)
+
+/bin - Binaries needed for normal/standard system functioning at any run level.
+
+/usr/bin - Application/distribution binaries meant to be accessed by locally logged in users
+
+/usr/sbin - Application/distribution binaries that support or configure stuff in /sbin.
+
+/usr/share/bin - Application/distribution binaries or scripts meant to be accesed via the web, i.e. Apache web applications
+
+
+CGroup
+Truth be told, certain software applications in the wild may need to be controlled or limited—at least
+ for the sake of stability and, to some degree, security.
+ Far too often, a bug or just bad code can disrupt an entire machine and potentially cripple an entire ecosystem.
+ Fortunately, a way exists to keep those same applications in check. Control groups (cgroups) is a kernel feature that limits, accounts for and isolates
+  the CPU, memory, disk I/O and network's usage of one or more processes.
+
+Application checkpointing
+In the distributed computing environment, checkpointing is a technique that helps tolerate failures that otherwise would force
+long-running application to restart from the beginning. The most basic way to implement checkpointing, is to stop the application,
+copy all the required data from the memory to reliable storage (e.g., parallel file system) and then continue with the execution.
+[1] In case of failure, when the application restarts, it does not need to start from scratch. Rather, it will read the latest state ("the checkpoint")
+from the stable storage and execute from that. While there is ongoing debate on whether checkpointing is the dominating I/O workload on distributed computing systems,
+there is general consensus that checkpointing is one of the major I/O workloads.
+
+This is how snapshot works too

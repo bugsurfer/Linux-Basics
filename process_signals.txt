@@ -1,0 +1,1 @@
+Unix and Linux like operating systems processes uses SIGNALS in order to communicate each other. For example If we can to kill a process we need to send a signal to process we want to kill. This signal will be SIGTERM and send by kill or similar commands. 

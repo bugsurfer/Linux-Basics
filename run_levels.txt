@@ -1,0 +1,8 @@
+Run levels:
+A run level is a state of init which defines what system services are operating
+these are identified by numbers
+
+Whenever a LINUX system boots, firstly the init process is started which is actually
+responsible for running other start scripts which mainly involves
+initialization of you hardware, bringing up the network,
+starting the graphical interface.

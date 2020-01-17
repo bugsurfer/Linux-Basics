@@ -1,0 +1,9 @@
+
+
+
+
+https://www.digitalocean.com/community/tutorials/how-to-manage-logfiles-with-logrotate-on-ubuntu-16-04
+
+Best resource on understanding log rotation with example
+
+also try logrotate --help for understanding the commands

@@ -1,0 +1,7 @@
+
+Deamon is a process which runs in the backgroundand generaaly the process name ends with d
+sshd is the deamon which allow ssh connections in the server
+
+
+BEst resource ever
+https://www.gmarik.info/blog/2012/orphan-vs-zombie-vs-daemon-processes/
